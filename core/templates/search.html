@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title%}{{ title }}{% endblock %}
+{% block contend %}
+
+
+<div class="container text-center" style="padding-top: 120px; padding-bottom: 100px;">
+    <h1 class="">{% trans 'Search Results for' %} <span class="text-success">"{{ query }}"</span></h1>
+    
+    {% if doctors %}
+        <h1>Blogs Pages</h1>
+        <ul>
+            {% for i in doctorss %}
+                <li><a href="{% url 'doctors' %}" style="text-decoration: underline !important; font-size: large;">{{ i.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+    <p>No results found.</p>
+    {% endif %}
+    <br>
+   
+</div>
+{% endblock %}

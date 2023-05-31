@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{%load static%}
+{% block content %}
+
+<!-- –––––––––––––––[ PAGE CONTENT ]––––––––––––––– -->
+<main id="mainContent" class="main-content">
+
+    <!-- Start Hero Area -->
+    <section class="section breadcrumb-area pt-100 pb-80" data-bg-img="{% static 'images/slider/01.jpg' %}">
+        <div class="container t-center">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 col-xs-12 text-center">
+                    <div class="section-top-title">
+                        <h1 class="t-uppercase font-45">OUR SPECIALISTS</h1>
+                        <ol class="breadcrumb">
+                            <li><a href="index-3.html"><i class="fa fa-home mr-10"></i>Home</a></li>
+                            <li class="active">Our Specialists</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Area -->
+
+    <!-- Start Featured Works -->
+    <section class="section doctors-area doctors-grid ptb-60">
+   
+        <div class="container">
+            <div class="row row-tb-15 mb-40">
+                <div class="col-3">
+                    <form action="" method="GET">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Search for news" name="doctors">
+                            
+                                <button class="btn btn-outline-secondary" type="submit">Search</button>
+                            
+                        </div>
+                    </form>
+                </div>
+                {% for i in doctors %}
+                <div class="col-md-4 col-sm-6">
+                    <div class="doctor-single">
+                        <figure class="embed-responsive embed-responsive-4by3" data-bg-img="{{ i.images.url}}">
+                            <div class="doctor-department p-15">
+                                <i class="icon-i-dental"></i>
+                            </div>
+                        </figure>
+                        <div class="entry-content p-20">
+                            <h4 class="h5 mb-5 t-uppercase">{{ i.title}}</h4>
+                            <h6 class="color-theme mb-10">{{ i.category }}</h6>
+                            <p class="color-mid mb-20">{{ i.description|truncatechars:100|safe }}</p>
+                            <div class="entry-more t-right">
+                                <a href="#" class="btn btn-sm btn-rounded btn-o">Make
+                                    Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+                <div class="row">
+                    <ul class="pagination" style=" padding-top: 800px;">
+                        {% if page_obj.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ page_obj.previous_page_number }}" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% for i in page_obj.paginator.page_range %}
+                        {% if page_obj.number == i %}
+
+                        <li class="page-item active"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+                        {% else %}
+                        <li class="page-item "><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                        {% if page_obj.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ page_obj.next_page_number }}" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        </div>
+     
+ 
+
+        </div>
+    </section>
+    <!-- End Featured Works -->
+
+
+
+
+</main>
+<!-- –––––––––––––––[ END PAGE CONTENT ]––––––––––––––– -->
+
+{% endblock %}

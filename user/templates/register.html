@@ -1,0 +1,132 @@
+
+
+
+
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .card {
+            width: 400px;
+            max-width: 100%;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            animation: fadeInUp 0.5s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            animation: fadeInUp 0.8s ease-in-out;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .form-field {
+            margin-bottom: 15px;
+            opacity: 0;
+            animation: raindrop 1.2s ease-in-out forwards;
+        }
+
+        @keyframes raindrop {
+            from {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .form-field label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .form-field input[type="text"],
+        .form-field input[type="password"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            opacity: 0;
+            animation: raindrop 1.4s ease-in-out forwards;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card animate__animated animate__fadeInUp">
+            <h1 class="animate__animated animate__fadeInUp">Register</h1>
+            <form method="post" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ error }}
+                {% for field in form %}
+                <div class="form-field animate__animated animate__fadeInUp">
+                    <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                    {{ field }}
+                </div>
+                {% endfor %}
+                <button type="submit" class="btn animate__animated animate__fadeInUp">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

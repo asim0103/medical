@@ -1,0 +1,344 @@
+   
+   {% extends 'base.html' %}
+   {% load static %}
+   {% block content %}
+   
+
+        <!-- –––––––––––––––[ PAGE CONTENT ]––––––––––––––– -->
+        <main id="mainContent" class="main-content">            <!-- Start Hero Area -->
+            <section class="section hero-area" data-bg-img="{% static 'images/slider/05.jpg' %}">
+                <div class="hero-slider owl-carousel" data-nav="true" data-loop="true" data-autoplay="true" data-smart-speed="1000" data-autoplay-timeout="10000">
+                    <div class="hero-slider-item" data-bg-img="{% static 'images/slider/01.jpg' %}">
+                        <div class="hero-overlay">
+                            <div class="hero-overlay-wrapper">
+                                <div class="pos-tb-center hero-overlay-inner">
+                                    <div class="container t-xs-center t-md-left">
+                                        <div class="row row-tb-20">
+                                            <div class="col-md-8">
+                                                <h3 class="mb-10">Health Care Services</h3>
+                                                <h1 class="t-uppercase mb-20">WE CARE ABOUT YOUR <span class="color-theme">HEALTH</span></h1>
+                                                <h5 class="mb-30 color-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper egestas. Sed non mattis metus. Integer vel lorem tincidunt.</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="hero-slider-item" data-bg-img="{% static 'images/slider/02.jpg' %}">
+                        <div class="hero-overlay">
+                            <div class="hero-overlay-wrapper">
+                                <div class="pos-tb-center hero-overlay-inner">
+                                    <div class="container">
+                                        <div class="row row-tb-20">
+                                            <div class="col-md-8">
+                                                <h3 class="mb-10">Health Care Services</h3>
+                                                <h1 class="t-uppercase mb-20">WE CARE ABOUT YOUR <span class="color-theme">HEALTH</span></h1>
+                                                <h5 class="mb-30 color-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper egestas. Sed non mattis metus. Integer vel lorem tincidunt.</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-slider-item" data-bg-img="{% static 'images/slider/03.jpg' %}">
+                        <div class="hero-overlay">
+                            <div class="hero-overlay-wrapper">
+                                <div class="pos-tb-center hero-overlay-inner">
+                                    <div class="container">
+                                        <div class="row row-tb-20">
+                                            <div class="col-md-8">
+                                                <h3 class="mb-10">Health Care Services</h3>
+                                                <h1 class="t-uppercase mb-20">WE CARE ABOUT YOUR <span class="color-theme">HEALTH</span></h1>
+                                                <h5 class="mb-30 color-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper egestas. Sed non mattis metus. Integer vel lorem tincidunt.</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-slider-item" data-bg-img="{% static 'images/slider/04.jpg' %}">
+                        <div class="hero-overlay">
+                            <div class="hero-overlay-wrapper">
+                                <div class="pos-tb-center hero-overlay-inner">
+                                    <div class="container">
+                                        <div class="row row-tb-20">
+                                            <div class="col-md-8">
+                                                <h3 class="mb-10">Health Care Services</h3>
+                                                <h1 class="t-uppercase mb-20">WE CARE ABOUT YOUR <span class="color-theme">HEALTH</span></h1>
+                                                <h5 class="mb-30 color-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper egestas. Sed non mattis metus. Integer vel lorem tincidunt.</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+            <!-- End Hero Area --><!-- Start Features Boxes Area -->
+<section class="section features-boxes-area hero-features-boxes">
+            <div class="container">
+                    <div class="row row-md-cell color-white">
+                        <div class="col-md-4 valign-top bg-theme">
+                            <div class="features-boxe-single prl-10 pt-20 pb-15">
+                                <h4 class="mb-20 t-uppercase">Emergency Case</h4>
+                                <p class="mb-20">Duis tincidunt leo sed dolor lacinia posuere. Nulla eu aliquam enim. Proin et nibh ut massa lacinia lacinia. Duis sit amet dictum nisl, vitae porttitor nunc. Vestibulum ante ipsum.</p>
+                                <a href="#" class="btn btn-o btn-rev">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 valign-top bg-blue-dark">
+                            <div class="features-boxe-single prl-10 pt-20 pb-15">
+                                <h4 class="mb-20 t-uppercase">24 Hours Service</h4>
+                                <p class="mb-20">Duis tincidunt leo sed dolor lacinia posuere. Nulla eu aliquam enim. Proin et nibh ut massa lacinia lacinia. Duis sit amet dictum nisl, vitae porttitor nunc. Vestibulum ante ipsum.</p>
+                                <a href="#" class="btn btn-o btn-rev">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 valign-top bg-blue-darker">
+                            <div class="features-boxe-single prl-10 pt-20 pb-15">
+                                <h4 class="mb-10 t-uppercase">Opening Hours</h4>
+                                <ul class="opening-hours">
+                                    <li>Monday – Thursday <span class="float-right">8.00 – 17.00</span></li>
+                                    <li>Friday <span class="float-right">9.30 – 17.30</span></li>
+                                    <li>Saturday - Sunday <span class="float-right">Closing</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div></section>
+<!-- End Features Boxes Area -->
+            <!-- Start About Us Area -->
+            <section class="section about-us-area pt-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="who-we-are mb-40">
+                                <h4 class="mb-10">We are medical center</h4>
+                                <h2 class="font-24 mb-20">We Have Medicare Plan Options for You!</h2>
+                                <p class="color-mid mb-20">Phasellus pretium orci sit amet mi ullamcorper egestas. Sed non mattis metus. Integer vel lorem tincidunt, pharetra eros nec, posuere odio. Nullam eget bibendum sem, venenatis lacinia justo. Duis aliquet lobortis neque, eget volutpat nulla iaculis a.</p>
+                                <p class="color-mid mb-20">In hac habitasse platea dictumst. Praesent condimentum justo justo, at ultricies diam accumsan vitae. Donec ac elementum diam. Ut quam orci, posuere quis lacus sed, vehicula rhoncus massa. Nunc volutpat nibh nulla, tincidunt egestas tellus faucibus nec.</p>
+                                <ul class="styled-list mb-30">
+                                    <li>Nulla venenatis auctor quam, ac porta lectus dictum in</li>
+                                    <li>Aliquam sodales nisi sit amet lorem</li>
+                                    <li>Suspendisse vulputate tellus in justo convallis imperdiet</li>
+                                    <li>Morbi id lorem consequat, sodales mi non</li>
+                                    <li>Nulla venenatis auctor quam, ac porta lectus dictum in</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 t-xs-center t-md-center">
+                            <img src="{% static 'images/about/about-03.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End About Us Area -->            <!-- Start Features Area -->
+            <section class="section features-area ptb-60 bg-gray">
+                <div class="container">
+                    <div class="row mb-30">
+                        <div class="col-lg-7 col-md-8 col-sm-10 col-xs-12 col-xs-center t-center mb-40">
+                            <h6 class="section-subtitle mb-10 t-uppercase color-mid">OUR FEATURES</h6>
+                            <h2 class="section-title mb-20 font-22 t-uppercase">WHY CHOOSE US</h2>
+                            <div class="heart-line">
+                                <img src="{% static 'images/icon.png' %}" alt="Awesome Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-tb-15 clearfix">
+                        <!--Column-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 column">
+                            <article class="feature-single">
+                                <div class="feature-icon">
+                                    <i class="icon-i-internal-medicine"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="mb-10">Internal Medicine</h4>
+                                    <p class="color-mid">Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <!--Column-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 column">
+                            <article class="feature-single">
+                                <div class="feature-icon">
+                                    <i class="icon-i-respiratory"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="mb-10">Respiratory</h4>
+                                    <p class="color-mid">Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <!--Column-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 column">
+                            <article class="feature-single">
+                                <div class="feature-icon">
+                                    <i class="icon-i-neurology"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="mb-10">Neurology</h4>
+                                    <p class="color-mid">Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <!--Column-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 column">
+                            <article class="feature-single">
+                                <div class="feature-icon">
+                                    <i class="icon-i-genetics"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="mb-10">Genetics Service</h4>
+                                    <p class="color-mid">Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <!--Column-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 column">
+                            <article class="feature-single">
+                                <div class="feature-icon">
+                                    <i class="icon-i-oncology"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="mb-10">Oncology Care</h4>
+                                    <p class="color-mid">Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <!--Column-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 column">
+                            <article class="feature-single">
+                                <div class="feature-icon">
+                                    <i class="icon-i-dental"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="mb-10">Dental Care</h4>
+                                    <p class="color-mid">Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Features Area -->            <!-- Start Services Area -->
+            <section class="section services-area ptb-60">
+                <div class="container">
+                    <div class="row mb-30">
+                        <div class="col-lg-7 col-md-8 col-sm-10 col-xs-12 col-xs-center t-center mb-40">
+                            <h6 class="section-subtitle mb-10 t-uppercase color-mid">OUR OUTSTANDING SERVICES</h6>
+                            <h2 class="section-title mb-20 font-22 t-uppercase">WHAT WE OFFER</h2>
+                            <div class="heart-line">
+                                <img src="{% static 'images/icon.png' %}" alt="Awesome Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="service-single">
+                                <div class="service-thumb">
+                                    <img src="{% static 'images/services/01.jpg' %}" alt="">
+                                </div>
+                                <div class="service-content">
+                                    <h5 class="mb-10 t-uppercase color-theme">Dental Implants</h5>
+                                    <p class="color-mid mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto officiis nesciunt incidunt eligendi iusto eius molestias atque.</p>
+                                    <a class="btn btn-o btn-sm btn-rounded" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-single">
+                                <div class="service-thumb">
+                                    <img src="{% static 'images/services/02.jpg' %}" alt="">
+                                </div>
+                                <div class="service-content">
+                                    <h5 class="mb-10 t-uppercase color-theme">Whitening</h5>
+                                    <p class="color-mid mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto officiis nesciunt incidunt eligendi iusto eius molestias atque.</p>
+                                    <a class="btn btn-o btn-sm btn-rounded" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-single">
+                                <div class="service-thumb">
+                                    <img src="{% static 'images/services/03.jpg' %}" alt="">
+                                </div>
+                                <div class="service-content">
+                                    <h5 class="mb-10 t-uppercase color-theme">Vaccinations</h5>
+                                    <p class="color-mid mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto officiis nesciunt incidunt eligendi iusto eius molestias atque.</p>
+                                    <a class="btn btn-o btn-sm btn-rounded" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-single">
+                                <div class="service-thumb">
+                                    <img src="{% static 'images/services/04.jpg' %}" alt="">
+                                </div>
+                                <div class="service-content">
+                                    <h5 class="mb-10 t-uppercase color-theme">Laboratory</h5>
+                                    <p class="color-mid mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto officiis nesciunt incidunt eligendi iusto eius molestias atque.</p>
+                                    <a class="btn btn-o btn-sm btn-rounded" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-single">
+                                <div class="service-thumb">
+                                    <img src="{% static 'images/services/05.jpg' %}" alt="">
+                                </div>
+                                <div class="service-content">
+                                    <h5 class="mb-10 t-uppercase color-theme">Medical dressage</h5>
+                                    <p class="color-mid mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto officiis nesciunt incidunt eligendi iusto eius molestias atque.</p>
+                                    <a class="btn btn-o btn-sm btn-rounded" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-single">
+                                <div class="service-thumb">
+                                    <img src="{% static 'images/services/06.jpg' %}" alt="">
+                                </div>
+                                <div class="service-content">
+                                    <h5 class="mb-10 t-uppercase color-theme">Emergency Contraception</h5>
+                                    <p class="color-mid mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto officiis nesciunt incidunt eligendi iusto eius molestias atque.</p>
+                                    <a class="btn btn-o btn-sm btn-rounded" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Services Area -->            <!-- Start Video Area -->
+            <section class="section video-area bg-gray">
+                <div class="container">
+                    <h2 class="is-hidden">Hospital Video</h2>
+                    <div class="row">
+                        <div class="col-sm-6 col-content ptb-60">
+                            <h6 class="t-uppercase color-theme mb-20">Recommended Video</h6>
+                            <h3 class="t-uppercase mb-20">Watch Our Hospital Video</h3>
+                            <p class="color-mid mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper egestas. Sed non mattis metus. Integer vel lorem tincidunt, pharetra eros nec, posuere odio. Nullam eget bibendum sem, venenatis lacinia justo. Duis aliquet lobortis neque, eget volutpat nulla iaculis a. Morbi iaculis, quam a facilisis condimentum, risus erat tincidunt dolor, ac interdum lorem urna non augue. In hac habitasse platea dictumst.</p>
+                            <a href="https://www.youtube.com/watch?v=rKjX0r4TGxA" class="btn iframe-lightbox">Watch Video</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-sm-offset-6 col-video" data-bg-img="{% static 'images/video/bg.jpg' %}">
+                    <a href="https://www.youtube.com/watch?v=rKjX0r4TGxA" class="iframe-lightbox">
+                        <div class="play"></div>
+                    </a>
+                </div>
+            </section>
+            <!-- End Video Area -->            <!-- Start appointment Area -->
+         
+            <!-- Start appointment Area -->            <!-- Start Our Team Area -->
+        
+            <!-- End Our Team Area -->
+            <!-- Start Testimonials Area -->
+         
+            <!-- End Testimonials Area -->            <!-- Start Subscribe Area  -->
+          
+            <!-- End Latest News section  -->
+        </main>
+        <!-- –––––––––––––––[ END PAGE CONTENT ]––––––––––––––– -->
+        {% endblock %}

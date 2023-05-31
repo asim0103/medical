@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{%load static%}
+{% block content %}
+		<!-- –––––––––––––––[ PAGE CONTENT ]––––––––––––––– -->
+		<main id="mainContent" class="main-content">
+			<!-- Start Hero Area -->
+            <section class="section breadcrumb-area pt-100 pb-80" data-bg-img="assets/images/slider/01.jpg">
+                <div class="container t-center">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 col-xs-12 text-center">
+                            <div class="section-top-title">
+                                <h1 class="t-uppercase font-45">Service Details</h1>
+                                <ol class="breadcrumb">
+                                    <li><a href="index-3.html"><i class="fa fa-home mr-10"></i>Home</a></li>
+                                    <li class="active">Service Details</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Hero Area -->
+
+            <!-- Start Project Details Area -->
+		    <section class="section service-details-area pt-60">
+	            <div class="container">
+	            	<div class="mb-40">
+						<h2 class="section-title mb-10 font-22 t-uppercase">LABORATORY</h2>
+                        <h6 class="section-subtitle t-uppercase color-mid">Our special services</h6>
+	            	</div>
+	            	<div class="mb-20">
+						<div class="row row-rl-0">
+                    		<div class="col-md-8">
+                    			<img src="{{ services.images.url}}" alt="">
+                    		</div>
+                    		<div class="col-md-4">
+                    			<div class="row">
+                    				<div class="col-md-12 col-sm-6">
+                    					<img src="assets/images/services/01.jpg" alt="">
+                    				</div>
+                    				<div class="col-md-12 col-sm-6">
+                    					<img src="assets/images/services/02.jpg" alt="">
+                    				</div>
+                    			</div>
+                    		</div>
+                    	</div>
+					</div>
+			        <div class="row pb-30">
+			        	<div class="col-xs-12 mb-20">
+		                    <h3 class="t-uppercase mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                            <p class="color-mid mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper egestas. Sed non mattis metus. Integer vel lorem tincidunt, pharetra eros nec, posuere odio. Nullam eget bibendum sem, venenatis lacinia justo. Duis aliquet lobortis neque, eget volutpat nulla iaculis a. Morbi iaculis, quam a facilisis condimentum, risus erat tincidunt dolor, ac interdum lorem urna non augue. In hac habitasse platea dictumst. Praesent condimentum justo justo, at ultricies diam accumsan vitae. Donec ac elementum diam. Ut quam orci, posuere quis lacus sed, vehicula rhoncus massa. Nunc volutpat nibh nulla, tincidunt egestas tellus faucibus nec.</p>
+			        	</div>
+			            <div class="col-md-6">
+			                <figure class="mb-30 mr-10">
+								<img class="w-full" src="assets/images/services/04.jpg" alt="">
+							</figure>
+			            </div>
+			        	<div class="col-md- pt-20">
+                            <h3 class="t-uppercase mb-10">Vivamus sem massa</h3>
+		                    <p class="color-mid mb-20">Vivamus sem massa, cursus at mollis eu, euismod id risus. Vestibulum nunc ante, sagittis ut nisl at, porta porttitor justo. Nam imperdiet imperdiet volutpat. Sed vitae quam congue, tincidunt nisi et, volutpat lacus. Nullam porttitor porta augue vel iaculis. Pellentesque a pretium erat. Maecenas semper laoreet dapibus. Sed sit amet convallis enim. Phasellus maximus gravida augue, in sollicitudin odio lacinia ac. Morbi cursus ante massa, et accumsan nisl mollis et. Nam venenatis et felis quis porta. Praesent vitae ipsum sit amet est scelerisque volutpat.</p>
+		                    <h3 class="t-uppercase mb-10">Aliquam mattis efficitur</h3>
+		                    <p class="color-mid mb-20">Aliquam mattis efficitur massa vel commodo. Nam non euismod ante. Proin consequat sem quis massa rhoncus, vel convallis eros tincidunt. Ut consequat eget nulla eu ultrices. Curabitur ac pellentesque mi, nec sagittis sem.</p>
+			        	</div>
+			        </div>
+			        <hr>
+	            </div>
+	        </section>
+		    <!-- End Project Details Area -->
+
+		    <!-- Start Services Area -->
+		    <section class="section services-area pt-40">
+		    	<div class="container">
+		    		<div class="mb-40">
+                        <h2 class="section-title mb-10 font-22 t-uppercase">FEATURED SERVICES</h2>
+                    	<h6 class="section-subtitle t-uppercase color-mid">OUR OUTSTANDING SERVICES</h6>
+                    </div>
+                    <div class="row mb-40">
+						<div class="col-md-4 col-sm-6">
+                            <div class="service-single">
+                                <div class="service-thumb">
+                                    <img src="{% static 'images/services/01.jpg' %}" alt="">
+                                </div>
+                                <div class="service-content">
+                                    <h5 class="mb-10 t-uppercase color-theme">Dental Implants</h5>
+                                    <p class="color-mid mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto officiis nesciunt incidunt eligendi iusto eius molestias atque.</p>
+                                    <a class="btn btn-o btn-sm btn-rounded" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-single">
+                                <div class="service-thumb">
+                                    <img src="assets/images/services/02.jpg" alt="">
+                                </div>
+                                <div class="service-content">
+                                    <h5 class="mb-10 t-uppercase color-theme">Whitening</h5>
+                                    <p class="color-mid mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto officiis nesciunt incidunt eligendi iusto eius molestias atque.</p>
+                                    <a class="btn btn-o btn-sm btn-rounded" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 is-hidden-sm">
+                            <div class="service-single">
+                                <div class="service-thumb">
+                                    <img src="assets/images/services/03.jpg" alt="">
+                                </div>
+                                <div class="service-content">
+                                    <h5 class="mb-10 t-uppercase color-theme">Vaccinations</h5>
+                                    <p class="color-mid mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto officiis nesciunt incidunt eligendi iusto eius molestias atque.</p>
+                                    <a class="btn btn-o btn-sm btn-rounded" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+					<hr>
+		    	</div>
+		    </section>
+		    <!-- End Services Area -->
+
+		    <!-- Start Pricing Table Area  -->
+           
+            <!-- End Pricing Table Area  -->
+
+
+
+		</main>
+		<!-- –––––––––––––––[ END PAGE CONTENT ]––––––––––––––– -->
+
+{% endblock %}

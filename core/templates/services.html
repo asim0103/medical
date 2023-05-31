@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{%load static%}
+{% block content %}
+
+
+		<!-- –––––––––––––––[ PAGE CONTENT ]––––––––––––––– -->
+		<main id="mainContent" class="main-content">
+			<!-- Start Hero Area -->
+			<section class="section breadcrumb-area pt-100 pb-80" data-bg-img="{% static 'images/slider/01.jpg' %}">
+                <div class="container t-center">
+	            	<div class="row">
+		            	<div class="col-md-10 col-md-offset-1 col-xs-12 text-center">
+							<div class="section-top-title">
+								<h1 class="t-uppercase font-45">Our Services</h1>
+								<ol class="breadcrumb">
+								  <li><a href="index-3.html"><i class="fa fa-home mr-10"></i>Home</a></li>
+								  <li class="active">Our Services</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+            </section>
+            <!-- End Hero Area -->
+
+            <!-- Start Services Area -->
+            <section class="section services-area ptb-60">
+                <div class="container">
+                    <div class="row mb-30">
+                        <div class="col-lg-7 col-md-8 col-sm-10 col-xs-12 col-xs-center t-center mb-40">
+                            <h6 class="section-subtitle mb-10 t-uppercase color-mid">OUR OUTSTANDING SERVICES</h6>
+                            <h2 class="section-title mb-20 font-22 t-uppercase">WHAT WE OFFER</h2>
+                            <div class="heart-line">
+                                <img src="{% static 'images/icon.png' %}" alt="Awesome Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% for i in services %}
+                        <div class="col-md-4">
+                            <div class="service-single">
+                                <div class="service-thumb">
+                                    <img src="{{ i.images.url }}" alt="">
+                                </div>
+                                <div class="service-content">
+                                    <h5 class="mb-10 t-uppercase color-theme">{{ i.title }}</h5>
+                                    <p class="color-mid mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto officiis nesciunt incidunt eligendi iusto eius molestias atque.</p>
+                                    <a class="btn btn-o btn-sm btn-rounded" href="{% url 'service_detail' i.slug %}">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    
+                    </div>
+                    <div class="view-more t-center">
+                        <form action="" method="post">
+                            {%csrf_token%}
+                        <input type="hidden" name="more-services" value="{{count}}">
+                        <button type="submit" class="btn btn-lg btn-rounded">View More</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- End Services Area -->
+		    <!-- Start Call To Action -->
+		    <section class="section call-to-action-area ptb-60 bg-gray">
+			    <div class="container">
+			        <div class="row">
+			            <div class="col-md-12 text-center">
+			                <h2 class="mb-15 font-24 t-uppercase">Make your appointment now</h2>
+			                <p class="mb-30"> Nam non euismod ante. Proin consequat sem quis massa rhoncus, vel convallis eros tincidunt.</p>
+			                <a href="#" class="btn btn-lg btn-rounded">Book appoinment</a>
+			            </div>
+			        </div>
+			    </div>
+			</section>
+		    <!-- End Call To Action -->
+
+		    <section class="section departments-area pt-60">
+                <div class="container">
+                    <div class="row row-md-cell">
+                        <div class="col-md-8 col-sm-12 pb-60">
+                            <h2 class="t-uppercase mb-15 font-24">Our Departments</h2>
+                            <div class="heart-line mb-20">
+                            	<img src="{% static 'images/icon.png' %}" alt="Awesome Image">
+                            </div>
+                            <p class="color-mid mb-40">
+                                Lorem ipsum dolor sit amet adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip commodo
+                            </p>
+                            <div class="row departments-list row-tb-10 row-rl-10">
+                             
+                                {% for servicecategory in servicecategory %}
+                                <div class="col-sm-3">
+                                    <a href="#" class="department-single">
+                                    	<div class="department-single-inner t-center">
+                                    		<div class="pos-tb-center">
+                                            	
+                                            	<h6 class="department-name t-uppercase"><a href="{% url 'services' %}?servicecategory={{servicecategory.title}}">{{ servicecategory.title }}</a></h6>
+                                    		</div>
+                                        </div>
+                                        <img src="assets/images/about/department-02.jpg" alt="">
+                                    </a>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="col-md-4 is-hidden-sm-down valign-bottom t-right">
+                        	<img src="assets/images/about/department.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+		</main>
+		<!-- –––––––––––––––[ END PAGE CONTENT ]––––––––––––––– -->
+{% endblock %}

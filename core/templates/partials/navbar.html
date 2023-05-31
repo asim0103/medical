@@ -1,0 +1,97 @@
+{% load static %}
+​{% load i18n %}
+<!-- –––––––––––––––[ HEADER ]––––––––––––––– -->
+        <!-- Start Top Bar -->
+        <div class="topbar bg-theme">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <ul class="topbar-info list-inline is-hidden-xs t-xs-center t-md-left">
+                            <li class="prl-10">
+                            <i class="fa fa-map-marker mr-10 font-16"></i>701 Shadow Ln, Las Vegas, NV 89106</li>
+                            <li class="prl-10">
+                            <i class="fa fa-phone mr-10 font-16"></i>1 (800) 233-2742 </li>
+                            <li class="prl-10">
+                            <i class="fa fa-envelope mr-10 font-16"></i>codastroid@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="social-icons list-inline font-16  t-xs-center t-md-right is-hidden-sm">
+                            <li class="social-icons__item"><a href="{% static '#' %}"><i class="fa fa-facebook"></i></a></li>
+                            <li class="social-icons__item"><a href="{% static '#' %}"><i class="fa fa-twitter"></i></a></li>
+                            <li class="social-icons__item"><a href="{% static '#' %}"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="social-icons__item"><a href="{% static '#' %}"><i class="fa fa-google-plus"></i></a></li>
+                            <li class="social-icons__item"><a href="{% static '#' %}"><i class="fa fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+​
+        <header id="mainHeader" class="main-header">
+            <div class="header-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="logo">
+                                <a href="{% static 'index-2.html' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
+                            </div>
+                            <!-- Phone Menu button -->
+                            <button id="menu" class="menu is-hidden-md-up"></button>
+                        </div>
+                        <div class="col-md-9">
+                            <nav class="navigation">
+                                <ul>
+                                 
+                                    <li> <a href="{% url 'home' %}"> {% trans 'Home' %}</a> </li>
+                                    <!-- <li><a href="{% url 'about' %}">{% trans 'About' %}</a></li> -->
+                                    <li><a href="#">{% trans 'Services' %}</a> <i class="fa fa-plus is-hidden-md-up"></i>
+                                        <ul class="sub-nav">
+                                            <li> <a href="{% url 'services' %}">{% trans 'Services' %}</a> </li>
+                                            <li> <a href="{% url 'faq' %}">{% trans 'FAQ' %}</a> </li>
+                                            
+                                           
+                                        </ul>
+                                    </li>
+                                    <li><a href="{% url 'doctors' %}">{% trans 'Doctors' %}</a> <i class="fa fa-plus is-hidden-md-up"></i>
+                                        
+                                    </li>
+                                    <li><a href="{% url 'blog-grid' %}">{% trans 'Blog' %}</a> <i class="fa fa-plus is-hidden-md-up"></i>
+                                        
+                                    </li>
+                                    <li><a href="{% url 'contact_us' %}">{% trans 'Contact' %}</a></li>
+                                    {% if not user.is_authenticated %}
+                                    <li><a href="{% url 'register' %}">Sign Up</a></li>
+                                    {% endif %}
+                                    {% if not user.is_authenticated %}
+                                    <li><a href="{% url 'login' %}">Login</a></li>
+                                    {% endif %}
+                                    {% if user.is_authenticated %}
+                                    <li><a href="{% url 'logout' %}">{% trans 'Logout' %}</a></li>
+                                    {% endif %}
+                                 
+                                    
+                                </ul>
+                                <form id="languageForm" action="{% url 'set_language' %}" method="post" style="display: block;">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="next" value="{{ request.path }}">
+                                    <select style="width: 50px; height: 30px; border-radius: 15%; border: none; color: rgb(112, 58, 58); font-size: 18px;" name="language" onchange="this.form.submit()">
+                                        {% get_current_language as LANGUAGE_CODE %}
+                                        {{ LANGUAGE_CODE }}
+                                        {% get_available_languages as LANGUAGES %}
+                                        {% get_language_info_list for LANGUAGES as languages %}
+                                        {% for language in languages %}
+                                        <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}>
+                                            {{ language.code }}
+                                        </option>
+                                        {% endfor %}
+                                    </select>
+                                </form>
+                          
+                            </nav>
+                  
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ––––––––––––– End Header

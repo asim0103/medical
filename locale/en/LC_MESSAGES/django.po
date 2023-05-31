@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-05 06:13+0000\n"
+"PO-Revision-Date: 2023-05-27 09:19+0000\n"
+"Last-Translator:   <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: core/models.py:24
+msgid "category"
+msgstr ""
+
+#: core/models.py:40
+msgid "news"
+msgstr ""
+
+#: core/models.py:57
+msgid "Settings"
+msgstr ""
+
+#: core/models.py:77
+msgid "Contact"
+msgstr ""
+
+#: core/models.py:90 core/templates/partials/navbar.html:66
+msgid "Blog"
+msgstr ""
+
+#: core/templates/partials/navbar.html:45
+msgid "Home"
+msgstr ""
+
+#: core/templates/partials/navbar.html:48
+msgid "Home page 1"
+msgstr ""
+
+#: core/templates/partials/navbar.html:49
+msgid "Home page 2"
+msgstr ""
+
+#: core/templates/partials/navbar.html:52
+msgid "About us"
+msgstr ""
+
+#: core/templates/partials/navbar.html:53
+#: core/templates/partials/navbar.html:55
+msgid "Services"
+msgstr ""
+
+#: core/templates/partials/navbar.html:56
+msgid "Service Details"
+msgstr ""
+
+#: core/templates/partials/navbar.html:59
+msgid "Doctors"
+msgstr ""
+
+#: core/templates/partials/navbar.html:61
+msgid "Doctors Grid"
+msgstr ""
+
+#: core/templates/partials/navbar.html:62
+msgid "Doctors List"
+msgstr ""
+
+#: core/templates/partials/navbar.html:63
+msgid "Doctor Details"
+msgstr ""
+
+#: core/templates/partials/navbar.html:68
+msgid "Blog Classic"
+msgstr ""
+
+#: core/templates/partials/navbar.html:69
+msgid "Blog Grid"
+msgstr ""
+
+#: core/templates/partials/navbar.html:70
+msgid "Blog List"
+msgstr ""
+
+#: core/templates/partials/navbar.html:71
+msgid "Blog Details"
+msgstr ""
+
+#: core/templates/partials/navbar.html:74
+msgid "pages"
+msgstr ""
+
+#: core/templates/partials/navbar.html:76
+msgid "Appointment"
+msgstr ""
+
+#: core/templates/partials/navbar.html:77
+msgid "Gallery"
+msgstr ""
+
+#: core/templates/partials/navbar.html:79
+msgid "Gallery 1"
+msgstr ""
+
+#: core/templates/partials/navbar.html:80
+msgid "Gallery 2"
+msgstr ""
+
+#: core/templates/partials/navbar.html:83
+#: core/templates/partials/navbar.html:85
+msgid "Departements"
+msgstr ""
+
+#: core/templates/partials/navbar.html:86
+msgid "Single Departement"
+msgstr ""
+
+#: core/templates/partials/navbar.html:89
+msgid "Pricing Tables"
+msgstr ""
+
+#: core/templates/partials/navbar.html:90
+msgid "Testimonials"
+msgstr ""
+
+#: core/templates/partials/navbar.html:91
+msgid "Coming soon"
+msgstr ""
+
+#: core/templates/partials/navbar.html:92
+msgid "faq"
+msgstr ""
+
+#: core/templates/partials/navbar.html:93
+msgid "404 page"
+msgstr ""
+
+#: core/templates/partials/navbar.html:96
+msgid "Contact us"
+msgstr ""
+
+#: core/templates/partials/navbar.html:97
+msgid "Register"
+msgstr ""
